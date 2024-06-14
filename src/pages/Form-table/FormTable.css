@@ -1,0 +1,188 @@
+/* FormTable.css */
+
+.formtable {
+    width: 80%;
+    margin: 20px auto;
+    font-family: Arial, sans-serif;
+  }
+  
+  .forma {
+    margin-bottom: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .forma input[type="text"] {
+    padding: 8px;
+    margin-right: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 14px;
+  }
+  
+  .forma button {
+    padding: 8px 16px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 14px;
+  }
+  
+  .forma button:hover {
+    background-color: #45a049;
+  }
+  
+  .mytable {
+    width: 100%;
+    border-collapse: collapse;
+    background-color: #f2f2f2;
+  }
+  
+  .mytable th, .mytable td {
+    border: 1px solid #ddd;
+    padding: 8px;
+    text-align: left;
+  }
+  
+  .mytable th {
+    background-color: #4CAF50;
+    color: white;
+  }
+  
+  .mytable tr:nth-child(even) {
+    background-color: #f2f2f2;
+  }
+  
+  .mytable tr:hover {
+    background-color: #ddd;
+  }
+  
+  .edit-delete button {
+    padding: 6px 12px;
+    margin-right: 4px;
+    background-color: #008CBA;
+    color: white;
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+    font-size: 12px;
+  }
+  
+  .edit-delete button:hover {
+    background-color: #005f6b;
+  }
+  
+  .save-cancel {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .save-cancel button {
+    padding: 6px 12px;
+    margin-right: 4px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+    font-size: 12px;
+  }
+  
+  .save-cancel button:hover {
+    background-color: #45a049;
+  }
+  
+
+  /* FormTable.css */
+
+.formtable {
+    width: 80%;
+    margin: 20px auto;
+    font-family: Arial, sans-serif;
+  }
+  
+  .forma {
+    margin-bottom: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .forma input[type="text"] {
+    padding: 8px;
+    margin-right: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 14px;
+  }
+  
+  .forma button {
+    padding: 8px 16px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 14px;
+  }
+  
+  .forma button:hover {
+    background-color: #45a049;
+  }
+  
+  .mytable {
+    width: 100%;
+    border-collapse: collapse;
+    background-color: #f2f2f2;
+  }
+  
+  .mytable th, .mytable td {
+    border: 1px solid #ddd;
+    padding: 8px;
+    text-align: left;
+  }
+  
+  .mytable th {
+    background-color: #4CAF50;
+    color: white;
+  }
+  
+  .mytable tr:nth-child(even) {
+    background-color: #f2f2f2;
+  }
+  
+  .mytable tr:hover {
+    background-color: #ddd;
+  }
+  
+  /* Media Queries */
+  
+  @media only screen and (max-width: 600px) {
+    .formtable {
+      width: 95%;
+    }
+    
+    .forma {
+      flex-direction: column;
+      align-items: stretch;
+    }
+    
+    .forma input[type="text"] {
+      margin-right: 0;
+      margin-bottom: 10px;
+    }
+    
+    .forma button {
+      margin-top: 10px;
+    }
+    
+    .mytable th, .mytable td {
+      padding: 6px;
+      font-size: 12px;
+    }
+  }
+  
