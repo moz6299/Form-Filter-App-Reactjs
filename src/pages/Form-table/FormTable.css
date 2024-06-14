@@ -152,7 +152,7 @@
 }
 
 /* Extra small devices (phones, less than 576px) */
-@media (max-width: 375px) {
+@media (max-width: 420px) {
   .formtable {
     width: 100%;
   }
@@ -167,8 +167,8 @@
   }
 
   .edit-delete button, .save-cancel button {
-    padding: 4px 6px;
-    font-size: 12px;
+    padding: 4px 10px;
+    font-size: 10px;
   }
 
   .mytable th, .mytable td {
