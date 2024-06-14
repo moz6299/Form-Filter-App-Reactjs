@@ -1,89 +1,177 @@
-  /* FormTable.css */
+/* FormTable.css */
 
 .formtable {
-    width: 80%;
-    margin: 20px auto;
-    font-family: Arial, sans-serif;
+  width: 80%;
+  margin: 20px auto;
+  font-family: Arial, sans-serif;
+}
+
+.forma {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+
+.forma input[type="text"] {
+  padding: 10px;
+  font-size: 16px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  width: 70%;
+  margin-right: 10px;
+}
+
+.forma button {
+  padding: 10px 20px;
+  font-size: 16px;
+  border: none;
+  background-color: #28a745;
+  color: white;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.forma button:hover {
+  background-color: #218838;
+}
+
+.mytable {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.mytable th, .mytable td {
+  padding: 12px;
+  text-align: left;
+  border-bottom: 1px solid #ddd;
+}
+
+.mytable th {
+  background-color: #f2f2f2;
+  color: black;
+}
+
+.mytable tr:hover {
+  background-color: #f1f1f1;
+}
+
+.edit-delete button, .save-cancel button {
+  padding: 5px 10px;
+  font-size: 14px;
+  border: none;
+  cursor: pointer;
+  margin-right: 5px;
+  border-radius: 4px;
+}
+
+.edit-delete button:first-child {
+  background-color: #ffc107;
+  color: white;
+}
+
+.edit-delete button:first-child:hover {
+  background-color: #e0a800;
+}
+
+.edit-delete button:last-child {
+  background-color: #dc3545;
+  color: white;
+}
+
+.edit-delete button:last-child:hover {
+  background-color: #c82333;
+}
+
+.save-cancel button:first-child {
+  background-color: #28a745;
+  color: white;
+}
+
+.save-cancel button:first-child:hover {
+  background-color: #218838;
+}
+
+.save-cancel button:last-child {
+  background-color: #6c757d;
+  color: white;
+}
+
+.save-cancel button:last-child:hover {
+  background-color: #5a6268;
+}
+
+@media (max-width: 768px) {
+  .formtable {
+    width: 95%;
   }
-  
-  .forma {
-    margin-bottom: 20px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-  }
-  
+
   .forma input[type="text"] {
-    padding: 8px;
-    margin-right: 10px;
-    border: 1px solid #ccc;
-    border-radius: 4px;
-    font-size: 14px;
+    width: 60%;
+    margin-right: 5px;
   }
-  
+
   .forma button {
-    padding: 8px 16px;
-    background-color: #af4c4c;
-    color: white;
-    border: none;
-    border-radius: 4px;
-    cursor: pointer;
+    padding: 10px 15px;
+  }
+
+  .edit-delete button, .save-cancel button {
+    padding: 5px 8px;
+    font-size: 12px;
+  }
+}
+
+/* Small devices (landscape phones, 576px and up) */
+@media (max-width: 576px) {
+  .formtable {
+    width: 100%;
+  }
+
+  .forma {
+    flex-direction: column;
+    align-items: stretch;
+  }
+
+  .forma input[type="text"] {
+    width: 100%;
+    margin-bottom: 10px;
+    margin-right: 0;
+  }
+
+  .forma button {
+    width: 100%;
+  }
+
+  .edit-delete button, .save-cancel button {
+    padding: 5px 10px;
     font-size: 14px;
   }
-  
-  .forma button:hover {
-    background-color: #45a049;
-  }
-  
-  .mytable {
-    width: 100%;
-    border-collapse: collapse;
-    background-color: #f2f2f2;
-  }
-  
+
   .mytable th, .mytable td {
-    border: 1px solid #ddd;
     padding: 8px;
-    text-align: left;
   }
-  
-  .mytable th {
-    background-color: #4CAF50;
-    color: white;
+}
+
+/* Extra small devices (phones, less than 576px) */
+@media (max-width: 375px) {
+  .formtable {
+    width: 100%;
   }
-  
-  .mytable tr:nth-child(even) {
-    background-color: #f2f2f2;
+
+  .forma input[type="text"] {
+    font-size: 14px;
   }
-  
-  .mytable tr:hover {
-    background-color: #ddd;
+
+  .forma button {
+    font-size: 14px;
+    padding: 8px 10px;
   }
-  
-  /* Media Queries */
-  
-  @media only screen and (max-width: 600px) {
-    .formtable {
-      width: 95%;
-    }
-    
-    .forma {
-      flex-direction: column;
-      align-items: stretch;
-    }
-    
-    .forma input[type="text"] {
-      margin-right: 0;
-      margin-bottom: 10px;
-    }
-    
-    .forma button {
-      margin-top: 10px;
-    }
-    
-    .mytable th, .mytable td {
-      padding: 6px;
-      font-size: 12px;
-    }
+
+  .edit-delete button, .save-cancel button {
+    padding: 4px 6px;
+    font-size: 12px;
   }
-  
+
+  .mytable th, .mytable td {
+    padding: 6px;
+  }
+}
