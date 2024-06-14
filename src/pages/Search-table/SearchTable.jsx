@@ -27,7 +27,7 @@ const SearchTable = () => {
             .filter((person) => {
               return (
                 inputValue === "" ||
-                person.name.toLowerCase().includes(inputValue) ||
+                person.name.toLowerCase().includes(inputValue.toLowerCase()) ||
                 person.phone.includes(inputValue)
               );
             })
