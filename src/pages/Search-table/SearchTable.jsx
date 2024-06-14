@@ -18,7 +18,7 @@ const SearchTable = () => {
       <table>
         <thead>
           <tr>
-            <th>First Name</th>
+            <th>Name</th>
             <th>Phone Number</th>
           </tr>
         </thead>
