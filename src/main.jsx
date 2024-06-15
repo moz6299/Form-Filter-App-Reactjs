@@ -5,7 +5,7 @@ import "./index.css";
 import { BrowserRouter } from "react-router-dom";
 
 ReactDOM.createRoot(document.getElementById("root")).render(
-  <BrowserRouter basename="/Form-Filter-App-Reactjs/">
+  <BrowserRouter basename="/Simple-Input-Filter-App-Reactjs/">
     <App />
   </BrowserRouter>
 );
